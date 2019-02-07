@@ -1,0 +1,92 @@
+body {
+	font-family: monospace;
+}
+
+img { /* TODO: Remove when table is a thing */
+	height: 514px;
+	width: 343px;
+}
+
+table {
+	border: 1px solid red;
+	margin-bottom: 20px;
+	font-size: xx-large;
+}
+
+.blur-warning {
+	color: magenta;
+	display: none;
+	font-size: xx-large;
+	text-transform: uppercase;
+}
+
+body {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+h2.note {
+	text-transform: uppercase;
+}
+
+.container {
+	float: left;
+	width: 700px;
+}
+
+.container h4 {
+	margin-bottom: 10px;
+	margin-top: 0;
+}
+
+.container ul {
+	margin-top: 0;
+}
+
+.container.large {
+	font-size: larger;
+}
+
+.counter {
+	float: left;
+	font-size: x-large;
+	margin-left: 10px;
+}
+
+.key {
+	font-weight: bold;
+}
+
+.keyInput {
+	width: 75px;
+}
+
+.log {
+	float: left;
+	height: 270px;
+	overflow-y: scroll;
+	width: 200px;
+}
+
+.log li {
+	font-size: x-large;
+	list-style: none;
+}
+
+.log li.highlight .number {
+	color: lime;
+}
+
+.log li.reset {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.number {
+	font-weight: bold;
+	color: red;
+}
+
+#tracker {
+	padding-bottom: 20px;
+}

@@ -1,0 +1,111 @@
+<html>
+<head>
+	<title>Drop Tracker</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="drop-tracker.css" />
+</head>
+<body>
+	<div class="container">
+		<div>
+			<table class="itemTable" style="display: none !important;">
+				<tr>
+					<th>Count</th>
+					<th>A</th>
+					<th>B</th>
+					<th>C</th>
+					<th>D</th>
+				</tr>
+				<tr>
+					<td>0 to 1</td>
+					<td class="item rupee"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+		<img id="tracker" src="0.png" />
+		<div class="blur-warning focus">
+			<h2>Tracker not in focus! Keyboard disabled!</h2>
+		</div>
+		<div>
+			<div class="log" style="float: left">
+				<ul></ul>
+			</div>
+			<div class="counter">
+				<h4>Kills Until...</h4>
+				<ul>
+					<li>Bombs: <span class="number" id="bombCounter"></span></li>
+					<li>Clock: <span class="number" id="clockCounter"></span></li>
+					<li>Fairy: <span class="number" id="fairyCounter"></span></li>
+					<li>Fiver: <span class="number" id="fiverCounter"></span></li>
+				</ul>
+				<h4>Drop Chances</h4>
+				<ul>
+					<li>A: 31% ( 80/256)</li>
+					<li>B: 41% (104/256)</li>
+					<li>C: 59% (152/256)</li>
+					<li>D: 41% (104/256)</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container large">
+		<h2>Drop Tracker v1.6 by TheDoctorBlue</h2>
+		<h3>Keyboard (browser window must be in focus for these to work)</h3>
+		<ul>
+			<li>1-9 = Advance Counter 1-9 Steps</li>
+			<li>
+				<input id="regressCountKey" type="text" class="keyInput" /> 
+				= Regress Counter 1 Step (Default: <span class="key">ArrowLeft</span>)
+			</li>
+			<li>
+				<input id="advanceCountKey" type="text" class="keyInput" /> 
+				= Advance Counter 1 Step (Default: <span class="key">ArrowRight</span>)
+			</li>
+			<li>
+				<input id="highlightKey" type="text" class="keyInput" />
+				= Highlight latest log entry (Default: <span class="key">0</span>)
+				<ul>
+					<li>Previous highlighting removed</li>
+					<li>If latest log entry was already highlighted, it stays un-highlighted</li>
+				</ul>
+			</li>
+			<li>
+				<input id="clearLogKey" type="text" class="keyInput" />
+				= Clear Log (Default: <span class="key">F4</span>)
+			</li>
+			<li>
+				<input id="resetCounterKey" type="text" class="keyInput" />
+				= Reset Counter to 0 (Default: <span class="key">F7</span>)
+			</li>
+			<li>
+				<input id="toggleLogKey" type="text" class="keyInput" />
+				= Toggle Log (Default: <span class="key">F9</span>)
+			</li>
+		</ul>
+		<div class="blur-warning edit">
+			<h2>Tracker disabled when editing keys. Click magenta text when done editing.</h2>
+		</div>
+		<h3>Tips</h3>
+		<ul>
+			<li>
+				Last key (can copy/paste into above bindings):
+				<span id="lastKeyPressedDisplay" class="key">N/A</span>
+			</li>
+			<li>
+				Set "Reset Counter" to the same key that resets your splits to kill two birds with one stone!
+			</li>
+			<li>
+				Best viewed half-screen (vertical), which hides all the informational text on the right and shows only relevant info.
+			</li>
+		</ul>
+		<h3>Coming Soon</h3>
+		<ul>
+			<li>Custom table instead of baked-in images</li>
+			<li>Expandable/collapsable sections</li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="drop-tracker.js"></script>
+<body>
