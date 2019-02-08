@@ -143,7 +143,7 @@ const keys = {
 	}
 	
 	function changeImage() {
-		$tracker.attr('src', currentImage + '.png');
+		$tracker.attr('src', 'img/' + currentImage + '.png');
 	}
 	
 	const $bombCounter = $('#bombCounter');
